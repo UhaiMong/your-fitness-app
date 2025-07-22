@@ -8,42 +8,47 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="max-width-1060 header">
-      <h1 class="logo">Fitness</h1>
-      <nav>
-        <ul class="nav-list">
-          <li class="active-nav"><a href="#home">Home</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- Hero Section -->
-    <section class="hero max-width-1060">
-      <div class="hero-content">
-        <h2>Get body in shape & stay healthy</h2>
-        <p>
-          Join our fitness community and take the first step towards a healthier
-          you. Discover personalized workout plans, expert guidance, and a
-          supportive environment to help you reach your fitness goals.
-        </p>
-        <a href="#join-club" class="btn btn-join-club">Join Club Now</a>
-        <a href="#appDownload" class="btn btn-download-app">Download App</a>
+    <header class="header-wrapper">
+      <div class="max-width-1060 header">
+        <h1 class="logo">Fitness</h1>
+        <nav>
+          <ul class="nav-list">
+            <li class="active-nav"><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./aboutus.html">About</a></li>
+          </ul>
+        </nav>
       </div>
-      <div class="hero-img">
-        <div class="workout-number">
-          <h3>500+</h3>
-          <p>Free workout videos</p>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero max-width-1060 hero-content-wrapper">
+        <div class="hero-content">
+          <h2>Get body in <br /><span>shape</span> & stay <br />healthy</h2>
+          <p>
+            Join our fitness community and take the first step towards a
+            healthier you. Discover personalized workout plans, expert guidance,
+            and a supportive environment to help you reach your fitness goals.
+          </p>
+          <a href="#join-club" class="btn btn-join-club">Join Club Now</a>
+          <a href="#appDownload" class="btn btn-download-app">Download App</a>
         </div>
-        <div class="tutorial-number">
-          <div class="active-sign"></div>
-          <div>
-            <h3>350+</h3>
-            <p>Videos Tutorials</p>
+        <div class="hero-img">
+          <div class="workout-number">
+            <h3>500+</h3>
+            <p>Free workout videos</p>
           </div>
+          <div class="tutorial-number">
+            <div class="active-sign"></div>
+            <div>
+              <h3>350+</h3>
+              <p>Videos Tutorials</p>
+            </div>
+          </div>
+          <img src="./assets/banner.png" alt="Fitness Hero Image" />
         </div>
-        <img src="./assets/banner.png" alt="Fitness Hero Image" />
       </div>
     </section>
     <!-- Main Content -->
@@ -137,96 +142,100 @@
       </section>
       <!-- BMI Calculator Section -->
       <section class="bmi-calculator-section" id="bmiCalculator">
-        <div class="bmi-calculator-container max-width-1060">
+        <div class="bmi-calculator-container">
           <h2>BMI Calculator</h2>
           <p>
             Use our BMI calculator to assess your body mass index and understand
             your weight category. It's a simple tool to help you track your
             fitness journey.
           </p>
-          <div class="bmi-caculator">
-            <div class="bmi-chart">
-              <h3>BMI Calculator Chart</h3>
-              <table>
-                <thead>
-                  <tr>
-                    <th>BMI Range</th>
-                    <th>Category</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Under 18.5</td>
-                    <td>Underweight</td>
-                  </tr>
-                  <tr>
-                    <td>18.5 - 24.9</td>
-                    <td>Healthy</td>
-                  </tr>
-                  <tr>
-                    <td>25.0 - 29.9</td>
-                    <td>Overweight</td>
-                  </tr>
-                  <tr>
-                    <td>30.0 and above</td>
-                    <td>Obesity</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <form class="bmi-form">
-              <h3>Calculate Your BMI</h3>
-              <p>
-                It is used to categorize individuals as underweight, healthy,
-                overweight, or obese, helping to assess overall health risks
-                related to body weight.
-              </p>
-              <div class="form-group">
-                <div class="form-item">
-                  <input
-                    type="number"
-                    id="height"
-                    name="height"
-                    required
-                    placeholder="Height(cm)"
-                  />
-                </div>
-                <div class="form-item">
-                  <input
-                    type="number"
-                    id="weight"
-                    name="weight"
-                    required
-                    placeholder="Weight(kg)"
-                  />
-                </div>
-                <div class="form-item">
-                  <input
-                    type="number"
-                    id="age"
-                    name="age"
-                    required
-                    placeholder="Age(years)"
-                  />
-                </div>
-                <div class="form-item">
-                  <select
-                    id="sex"
-                    name="sex"
-                    required
-                    placeholder="Select Your Sex"
-                  >
-                    <option value="" selected disabled>Select Your Sex</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
+          <div class="bmi-calculator-wrapper">
+            <div class="bmi-caculator max-width-1060">
+              <div class="bmi-chart">
+                <h3>BMI Calculator Chart</h3>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>BMI Range</th>
+                      <th>Category</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Under 18.5</td>
+                      <td>Underweight</td>
+                    </tr>
+                    <tr>
+                      <td>18.5 - 24.9</td>
+                      <td>Healthy</td>
+                    </tr>
+                    <tr>
+                      <td>25.0 - 29.9</td>
+                      <td>Overweight</td>
+                    </tr>
+                    <tr>
+                      <td>30.0 and above</td>
+                      <td>Obesity</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-              <button class="btn btn-bmi-calculator" type="submit">
-                Calculate BMI
-              </button>
-            </form>
+              <form class="bmi-form">
+                <h3>Calculate Your BMI</h3>
+                <p>
+                  It is used to categorize individuals as underweight, healthy,
+                  overweight, or obese, helping to assess overall health risks
+                  related to body weight.
+                </p>
+                <div class="form-group">
+                  <div class="form-item">
+                    <input
+                      type="number"
+                      id="height"
+                      name="height"
+                      required
+                      placeholder="Height(cm)"
+                    />
+                  </div>
+                  <div class="form-item">
+                    <input
+                      type="number"
+                      id="weight"
+                      name="weight"
+                      required
+                      placeholder="Weight(kg)"
+                    />
+                  </div>
+                  <div class="form-item">
+                    <input
+                      type="number"
+                      id="age"
+                      name="age"
+                      required
+                      placeholder="Age(years)"
+                    />
+                  </div>
+                  <div class="form-item">
+                    <select
+                      id="sex"
+                      name="sex"
+                      required
+                      placeholder="Select Your Sex"
+                    >
+                      <option value="" selected disabled>
+                        Select Your Sex
+                      </option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
+                <button class="btn btn-bmi-calculator" type="submit">
+                  Calculate BMI
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
