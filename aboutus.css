@@ -1,0 +1,50 @@
+.about-us {
+  width: 100%;
+}
+.about-us-banner {
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.about-us-banner img {
+  width: 100%;
+  height: 100%;
+  filter: blur(3px);
+  object-fit: cover;
+}
+.about-us-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 5px;
+}
+.about-us-text h1 {
+  color: #ffccdd;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.about-us-text p {
+  font-size: 1.2rem;
+}
+.about-us-container {
+  margin-top: 40px;
+}
+.about-us-container p {
+  font-size: 0.9rem;
+  line-height: 1.9;
+  color: #847d7dd9;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  text-transform: capitalize;
+  text-align: justify;
+}
+.about-us-container span {
+  font-weight: bold;
+  font-size: 35px;
+  color: #a7a3a3;
+  line-height: 1;
+}

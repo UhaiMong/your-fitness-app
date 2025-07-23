@@ -4,9 +4,97 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="contact.css" />
   </head>
   <body>
-    <h1>Contact Us</h1>
-    <p>If you have any questions, feel free to reach out!</p>
+    <!-- Header -->
+    <header class="header-wrapper">
+      <div class="max-width-1060 header">
+        <h1 class="logo">Fitness</h1>
+        <nav>
+          <ul class="nav-list">
+            <li class="active-nav"><a href="./index.html">Home</a></li>
+            <li><a href="./index.html">Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./aboutus.html">About</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Contact Section -->
+    <section class="contact-section">
+      <div class="contact-banner">
+        <img src="./assets/contactBanner.webp" alt="Contact Us Banner" />
+        <div class="contact-banner-text">
+          <h1>Get in Touch</h1>
+          <p>We'd love to hear from you!</p>
+        </div>
+      </div>
+      <div class="max-width-1060 contact-header">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+      </div>
+      <div class="contact-form-container max-width-1060">
+        <form class="contact-form" action="#" method="post">
+          <div class="form-group">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container max-width-1060">
+        <div class="footer-logo">
+          <h2>Fitness</h2>
+          <p>
+            Join our fitness community and take the first step towards a
+            healthier you. Discover personalized workout plans, expert guidance,
+            and a supportive environment to help you reach your fitness goals.
+          </p>
+        </div>
+        <div class="footer-links">
+          <h2>Quick Links</h2>
+          <a href="#about">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <h2>Contact Us</h2>
+          <p>Email: <a href="mailto:info@fitness.com">info@fitness.com</a></p>
+          <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        </div>
+      </div>
+      <hr class="max-width-1060 footer-hr" />
+      <div class="footer-bottom">
+        <p>&copy; 2023 Fitness. All rights reserved.</p>
+      </div>
+    </footer>
   </body>
 </html>
