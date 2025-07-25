@@ -503,6 +503,11 @@ a {
   cursor: pointer;
   margin-top: 20px;
 }
+#bmiValue,
+#bmiStatus {
+  color: #fbf9f9;
+  font-weight: bold;
+}
 .btn-bmi-calculator:hover {
   background-color: #ffffff;
   color: #e6533c;
