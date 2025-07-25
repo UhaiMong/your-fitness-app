@@ -459,6 +459,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  margin-bottom: 20px;
 }
 .form-item {
   flex: 1 1 calc(50% - 10px);
@@ -489,6 +490,9 @@ a {
   border-color: #e6533c;
   box-shadow: 0 0 5px rgba(230, 83, 60, 0.5);
 }
+.bmi-result-text {
+  font-size: 0.8rem;
+}
 .btn-bmi-calculator {
   text-align: left;
   background-color: #e6533c;
@@ -518,8 +522,6 @@ a {
   text-align: center;
   font-size: 0.8rem;
   color: #847d7dd9;
-  /* max-width: 600px; */
-  /* margin: 40px auto; */
   margin-bottom: 28px;
   padding: 0 165px;
 }
@@ -735,6 +737,10 @@ a {
     flex-direction: column;
     text-align: left;
   }
+  .footer-contact,
+  .footer-links {
+    flex: auto;
+  }
 }
 
 /* Medium devices: 577px to 992px */
@@ -758,6 +764,80 @@ a {
     padding-bottom: 10px;
     margin-left: -9999999999px;
   }
+  .hero {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .hero-content {
+    margin-top: 40px;
+    max-width: 90%;
+  }
+  .tutorial-number {
+    top: 295px;
+    right: 172px;
+  }
+  .advice-cards {
+    flex-wrap: wrap;
+  }
+  .advice-card-list {
+    flex: 0 0 calc(50% - 10px);
+  }
+  .join-to-run-content {
+    flex: 1;
+    width: 50%;
+    padding-right: 10px;
+  }
+  .training-section {
+    width: 95%;
+  }
+  .training-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .bmi-calculator-section p {
+    width: 95%;
+  }
+  .bmi-caculator {
+    width: 95%;
+    flex-direction: column;
+  }
+  .bmi-chart,
+  .bmi-form {
+    width: 100%;
+  }
+
+  .team-section {
+    width: 95%;
+  }
+  .team-section .team-section-content {
+    padding: 0 30px;
+  }
+  .team-cards {
+    flex-wrap: wrap;
+  }
+  .team-card {
+    flex: 0 0 calc(50% - 10px);
+  }
+  .footer-container {
+    width: 90%;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+  .footer-container div:first-child {
+    flex: 1 1 100%;
+  }
+  .footer-container div:nth-child(2),
+  .footer-container div:nth-child(3) {
+    margin-top: 40px;
+    flex: 1 1 50%;
+  }
+  .footer-hr {
+    width: 90%;
+  }
 }
 
 /* Large devices: above 992px */
@@ -770,5 +850,29 @@ a {
   }
   .header-larg-device {
     display: block;
+    width: 90%;
+    margin: 0 auto;
+    background-color: transparent;
+  }
+  .hero {
+    max-width: 90%;
+  }
+  .advice-section {
+    width: 90%;
+  }
+  .training-section {
+    width: 90%;
+  }
+  .bmi-caculator {
+    width: 95%;
+  }
+  .team-section {
+    width: 90%;
+  }
+  .footer-container {
+    width: 90%;
+  }
+  .footer-hr {
+    width: 90%;
   }
 }

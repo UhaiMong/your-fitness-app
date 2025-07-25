@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Web Page</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Fitness</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <!-- Header -->
@@ -201,8 +201,7 @@
                 <h3>Calculate Your BMI</h3>
                 <p>
                   It is used to categorize individuals as underweight, healthy,
-                  overweight, or obese, helping to assess overall health risks
-                  related to body weight.
+                  overweight, or obese.
                 </p>
                 <div class="form-group">
                   <div class="form-item">
@@ -248,7 +247,15 @@
                     </select>
                   </div>
                 </div>
-                <button class="btn btn-bmi-calculator" type="submit">
+                <p class="bmi-result-text">
+                  Your BMI: <span id="bmiValue"></span>, status:
+                  <span id="bmiStatus"></span>. <span id="health"></span>
+                </p>
+                <button
+                  id="submitButton"
+                  class="btn btn-bmi-calculator"
+                  type="submit"
+                >
                   Calculate BMI
                 </button>
               </form>
